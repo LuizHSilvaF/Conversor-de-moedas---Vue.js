@@ -1,17 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <ConversorMoeda moedaA="USD" moedaB="BRL"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ConversorMoeda from "./components/Conversor.vue";
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: {ConversorMoeda
   }
-}
+};
 </script>
 
 <style>
